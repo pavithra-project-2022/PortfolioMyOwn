@@ -1,0 +1,163 @@
+@import "../../global.scss";
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+.works {
+  
+  background: url("../../../public/assets/backk.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .arrowss {
+    height: 50px;
+    position: absolute;
+    cursor: pointer;
+
+    @include mobile {
+      display: none;
+    }
+
+    &.left {
+      left: 100px;
+      transform: rotateY(180deg);
+    }
+    &.right {
+      right: 100px;
+    }
+  }
+
+  .slider {
+    height: 350px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: all 2s ease-out;
+    
+
+    @include mobile {
+      height: 88vh;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .cont {
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &::-webkit-scrollbar {
+        display: none;
+
+        @include mobile {
+          width: 70vw;
+        }
+      }
+     
+
+      .item {
+        width: 700px;
+        height: 100%;
+        background: rgba(0,0,0,0.50);
+        border: 2px solid gray;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        &:hover {
+          transform: scale(1.05);
+          border-radius: 50px;
+          cursor: pointer;
+          @include mobile {
+            border-radius: 10px;
+          }
+        }
+        @include mobile {
+          width: 80%;
+          height: 160px;
+          margin: 10px 5px;
+          &::-webkit-scrollbar {
+            display: none;
+          }
+        }
+        h4 {
+          font-size: 35px;
+          color: deeppink;
+          margin: 15px;
+          font-family: 'El Messiri', sans-serif;
+          &::-webkit-scrollbar {
+            display: none;
+          }
+          @include mobile {
+            margin: 5px;
+            width:100%;
+            font-size: 20px;
+            &::-webkit-scrollbar {
+              display: none;
+            }
+          }
+       
+        &:hover {
+          transform: scale(1.05);
+          border-radius: 50px;
+          cursor: pointer;
+          @include mobile {
+            border-radius: 10px;
+          }
+        }
+
+        
+          .leftContainer {
+            
+            display: flex;
+            flex-direction: column;
+            
+            @include mobile {
+              font-size:10px;
+              &::-webkit-scrollbar {
+                display: none;
+              }
+            }
+            &:hover {
+              transform: scale(1.05);
+              border-radius: 50px;
+              cursor: pointer;
+              @include mobile {
+                border-radius: 10px;
+              }
+            }
+          
+          }
+           
+          }
+        }
+       
+
+    }
+  }
+}
+.pp {
+  font-size: 17px;
+  font-weight: 900;
+  color: white;
+  line-height: 30px;
+  letter-spacing: 1px;
+  font-family: 'Bad Script', cursive;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+ 
+  @include mobile {
+    font-size: 13px;
+    font-weight: 900;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

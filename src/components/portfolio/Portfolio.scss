@@ -1,0 +1,114 @@
+@import "../../global.scss";
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap");
+
+.portfolio {
+  background: url("../../../public/assets/backk.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-size: 40px;
+    color: deeppink;
+    font-family: "Cinzel", serif;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    @include mobile {
+      font-size: 30px;
+    }
+  }
+
+  ul {
+    margin: 10px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    @include mobile {
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    li {
+      font-size: 20px;
+      margin-right: 50px;
+      padding: 5px;
+      border-radius: 10px;
+      color: deeppink;
+      font-family: "Cinzel", serif;
+      cursor: pointer;
+      @include mobile {
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        margin: 0;
+      }
+
+      &.active {
+        background-color: #afeca0;
+        color: deeppink;
+        @include mobile {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .cons {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include mobile {
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    .item {
+      width: 220px;
+      height: 150px;
+      border-radius: 20px;
+      border: 1px solid lightgray;
+      margin: 30px 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: deeppink;
+      position: relative;
+      transition: all 1s ease;
+      cursor: pointer;
+
+      @include mobile {
+        width: 200px;
+        height: 120px;
+        margin: 20px;
+      }
+
+      h3 {
+        position: absolute;
+        font-size: 20px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+      }
+
+      &:hover {
+        background-color: white;
+        transform: scale(1.25);
+        @include mobile {
+        }
+        img {
+          opacity: 0;
+          z-index: 0;
+        }
+      }
+    }
+  }
+}

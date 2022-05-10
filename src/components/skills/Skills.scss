@@ -1,0 +1,172 @@
+@import "../../global.scss";
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;600&display=swap");
+
+//font-family: "Cinzel", serif;
+//font-family: 'Josefin Sans', sans-serif;
+.skills {
+  background: url("../../../public/assets/backk.jpg");
+
+  .skill {
+    width: 500px;
+    margin: 30px auto;
+    padding: 15px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 1), 0 10px 10px rgba(0, 0, 0, 0.25);
+    @include mobile{
+      width: 300px;
+    }
+    h2 {
+      font-family: "Cinzel", serif;
+      color: deeppink;
+      text-align: center;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    li {
+      margin: 3px;
+      padding: 3px;
+      list-style: none;
+      color: pink;
+
+      h5 {
+        margin: 3px;
+        font-family: "Josefin Sans", sans-serif;
+      }
+
+      .bar {
+        background: #353b48;
+        display: block;
+        height: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        &:hover {
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 1),
+            0 10px 10px rgba(0, 0, 0, 0.25);
+        }
+
+        span {
+          height: 20px;
+          float: left;
+          background: linear-gradient(
+            135deg,
+            rgba(236, 0, 140, 1) 0%,
+            rgba(252, 103, 103, 1) 100%
+          );
+        }
+        .html {
+          width: 80%;
+          animation: html 3s infinite;
+        }
+        .css {
+          width: 75%;
+          animation: css 3s infinite;
+        }
+        .bootstrap {
+          width: 90%;
+          animation: bootstrap 3s infinite;
+        }
+        .dom {
+          width: 60%;
+          animation: dom 3s infinite;
+        }
+        .javascript {
+          width: 75%;
+          animation: javascript 3s infinite;
+        }
+        .react {
+          width: 75%;
+          animation: react 3s infinite;
+        }
+        .node {
+          width: 75%;
+          animation: react 3s infinite;
+        }
+        .mongo {
+          width: 75%;
+          animation: react 3s infinite;
+        }
+        .sql {
+          width: 75%;
+          animation: react 3s infinite;
+        }
+        @keyframes html {
+            0% {
+              width: 0%;
+            }
+            100% {
+              width: 90%;
+            }
+          }
+          @keyframes css {
+            0% {
+              width: 0%;
+            }
+            100% {
+              width: 75%;
+            }
+          }
+          @keyframes bootstrap {
+            0% {
+              width: 0%;
+            }
+            100% {
+              width: 80%;
+            }
+          }
+          @keyframes dom {
+            0% {
+              width: 0%;
+            }
+            100% {
+              width: 60%;
+            }
+          }
+          @keyframes javascript {
+            0% {
+              width: 0%;
+            }
+            100% {
+              width: 75%;
+            }
+          }
+          @keyframes react {
+            0% {
+              width: 0%;
+            }
+            100% {
+              width: 75%;
+            }
+          }
+          @keyframes node {
+            0% {
+              width: 0%;
+            }
+            100% {
+              width: 75%;
+            }
+          }
+          @keyframes mongo {
+            0% {
+              width: 0%;
+            }
+            100% {
+              width: 75%;
+            }
+          }
+          @keyframes sql {
+            0% {
+              width: 0%;
+            }
+            100% {
+              width: 75%;
+            }
+          }
+          
+      }
+    }
+  }
+}

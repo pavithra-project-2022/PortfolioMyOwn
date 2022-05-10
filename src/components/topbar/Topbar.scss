@@ -1,0 +1,116 @@
+@import '../../global.scss';
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kite+One&display=swap");
+
+
+.topbar {
+  width: 100%;
+  height: 70px;
+  background-color: black;
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+ 
+  transition: all 2s ease;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .D {
+    font-family: "Tangerine", cursive;
+    font-size: 3em;
+    letter-spacing: 1px;
+    font-weight: 900;
+    color: #09e35f;
+    
+   
+  }
+  .T {
+    font-family: "Kite One", sans-serif;
+    font-size: 1.5em;
+    font-weight: 900;
+    color: #e9117f;
+    letter-spacing: 1px;
+  }
+  .wrapper {
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left {
+      display: flex;
+      align-items: center;
+      .logo {
+        text-decoration: none;
+        margin-right: 40px;
+      }
+      .itemContainer {
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+@include mobile{
+  display: none;
+}
+
+        .icons {
+            font-size: 20px;
+            margin-right: 5px;
+          }
+          span {
+            font-size: 18px;
+            font-weight: 900;
+            font-family: "Kite One", sans-serif;
+          }
+      }
+    }
+    .right{
+        .hamburger {
+            width: 32px;
+            height: 25px;
+            margin-right: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
+            cursor: pointer;
+            span{
+                width: 100%;
+                height: 2px;
+                background-color: #e9117f;
+                transform-origin: left;
+                transition: all 2s ease;
+            }
+            
+          }
+    }
+    
+  }
+
+  &.active{
+      background-color: white;
+      color: black;
+      .hamburger{
+          span{
+              &:first-child{
+                  background-color: #e9117f;
+                  transform: rotate(45deg);
+              }
+              &:last-child{
+                background-color: #e9117f;
+                transform: rotate(-45deg);
+              }
+              &:nth-child(2){
+                  opacity: 0;
+              }
+          }
+      }
+  }
+}
+
+
+
+
+
+
+
+
+

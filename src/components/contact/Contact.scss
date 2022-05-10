@@ -1,0 +1,111 @@
+@import "../../global.scss";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap");
+
+.contact{
+  background: url("../../../public/assets/backk.jpg");
+  display: flex;
+  @include mobile {
+    flex-direction: column;
+  }
+  
+  .right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2{
+      font-size: 35px;
+      color: deeppink;
+      margin-bottom: 30px;
+      font-family: "Cinzel", serif;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    @include mobile{
+      font-size: 20px;
+    }
+    }
+    form{
+      width: 30%;
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      margin-right:20px ;
+      border: 2px solid deeppink;
+      border-radius: 10px;
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 900;
+      padding-top: 10px;
+
+      @include mobile{
+        width: 70%;
+        height: 70%;
+        margin-right: 20px;
+      }
+     
+     
+
+      input{
+        width: 300px;
+        height: 30px;
+        font-size:14px;
+        border: 2px solid deeppink;
+        border-radius: 10px;
+        @include mobile {
+          width: 200px;
+          height: 20px;
+        }
+      }
+      textarea{
+        width: 300px;
+        height: 200px;
+        font-size: 14px;
+        border: 2px solid deeppink;
+        border-radius: 10px;
+        @include mobile {
+          width: 200px;
+          height: 100px;
+        }
+      }
+      button{
+        width: 75px;
+        height: 30px;
+        color: rgb(20, 32, 56);
+        background-color: deeppink;
+        border:2px solid black;
+        border-radius: 7px;
+        cursor: pointer;
+        font-weight: 900;
+
+       
+      }
+      .mess{
+        font-family: 'Comic Neue', cursive;
+        font-size: 15px;
+        color: yellow;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    @include mobile{
+      margin-left: 25px;
+    }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1024px) and (max-height: 603px) {  
+ .contact{.right { 
+    form{
+      width: 70%;
+      height: 70%;
+    }
+  }
+}
+}
+

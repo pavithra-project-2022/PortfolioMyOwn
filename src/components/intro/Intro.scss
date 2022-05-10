@@ -1,0 +1,17 @@
+@import "../../global.scss";
+
+.intro {
+  display: flex;
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+  background: url("../../../public/assets/girl.jpg");
+  // background: url(https://2.bp.blogspot.com/-5yds6a5p_k0/WpuZ4-tF0MI/AAAAAAAADWs/VMHP1luEXp4f6VrTo4NtSWauwOvoeCMxQCLcBGAs/s1600/professional-girl-with-white-laptop.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+}
+
